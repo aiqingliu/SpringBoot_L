@@ -24,4 +24,9 @@ public class HellowordController {
         helloMap.put("message", "ok");
         return helloMap;
     }
+
+    @RequestMapping("/helloV")
+    public void helloV() {
+
+    }
 }
