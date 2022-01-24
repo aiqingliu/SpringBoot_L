@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <span>hello page html 5 templates</span>
+    <div th:text="${msg}"></div>
+    <div th:each="ea:${eac}" th:text="${ea}"></div>
+    <div th:each="ea:${eac}" >[[${ea}]]</div>
+</body>
+</html>

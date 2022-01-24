@@ -1,9 +1,12 @@
 package com.liuaiqing.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -26,7 +29,14 @@ public class HellowordController {
     }
 
     @RequestMapping("/helloV")
-    public void helloV() {
+    public String helloV() {
+        return "hello";
+    }
 
+    @RequestMapping("/helloThy")
+    public String helloThymeleaf(Model model) {
+        model.addAttribute("msg","hello");
+        model.addAttribute("eac", Arrays.asList("111","2222"));
+        return "hello";
     }
 }
