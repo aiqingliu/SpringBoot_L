@@ -29,13 +29,14 @@ public class HellowordController {
 
     @RequestMapping("/helloV")
     public String helloV() {
-        return "hello";
+        System.out.println("helloV");
+        return "login/hello";
     }
 
     @RequestMapping("/helloThy")
     public String helloThymeleaf(Model model) {
         model.addAttribute("msg","hello");
         model.addAttribute("eac", Arrays.asList("111","2222"));
-        return "hello";
+        return "login/hello";
     }
 }
