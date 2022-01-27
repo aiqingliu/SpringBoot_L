@@ -7,3 +7,9 @@ debug: true
 spring:
   thymeleaf:
     cache: false
+
+srping:
+  mvc:
+    format:
+      date: yyyy-MM-dd
+
