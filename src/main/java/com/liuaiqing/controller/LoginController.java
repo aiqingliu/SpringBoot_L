@@ -11,8 +11,25 @@ public class LoginController {
 //        return "login";
 //    }
 
+    /**
+     * 登录页面
+     * @return
+     */
     @RequestMapping({"/sign"})
     public String sign() {
+        System.out.println("sign");
         return "sign";
+    }
+
+    /**
+     * 登录进入系统管理页面
+     * 验证用户密码内容
+     * @return
+     */
+    @RequestMapping({"/index"})
+    public String index() {
+        System.out.println("index");
+
+        return "index";
     }
 }

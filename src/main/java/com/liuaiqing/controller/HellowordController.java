@@ -39,4 +39,13 @@ public class HellowordController {
         model.addAttribute("eac", Arrays.asList("111","2222"));
         return "login/hello";
     }
+
+    @RequestMapping("/helloT")
+    @ResponseBody
+    public String helloT(Model model) {
+        model.addAttribute("stat", "true");
+        model.addAttribute("msg", "helloT");
+        model.addAttribute("result", Arrays.asList("11", "22", "333"));
+        return "helloT";
+    }
 }
