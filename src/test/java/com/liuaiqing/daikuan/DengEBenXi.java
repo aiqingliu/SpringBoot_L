@@ -1,4 +1,4 @@
-package com.liuaiqing.fangdai;
+package com.liuaiqing.daikuan;
 
 import org.junit.jupiter.api.Test;
 
